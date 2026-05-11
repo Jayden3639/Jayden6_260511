@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알기 쉬운 주역 | 오늘의 지혜</title>
+    <meta name="description" content="주역 64괘를 통해 오늘의 운세를 확인하고, 변화의 지혜를 얻으세요. 주역 공부와 64괘 라이브러리를 제공합니다.">
+    <meta name="google-adsense-account" content="ca-pub-2599900779484800">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2599900779484800" crossorigin="anonymous"></script>
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased">
+
+    <nav class="py-6 px-8 flex justify-between items-center border-b border-stone-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="serif text-2xl font-bold tracking-tighter cursor-pointer" onclick="location.href='/'">알기 쉬운 <span class="gold-accent">주역</span></div>
+        <div class="flex gap-4">
+            <a href="#daily-wisdom" class="bg-amber-100 hover:bg-amber-200 text-amber-800 px-4 py-2 rounded-lg text-sm font-bold transition">오늘의 괘</a>
+            <a href="/learning.html" class="bg-stone-100 hover:bg-stone-200 text-stone-700 px-4 py-2 rounded-lg text-sm font-bold transition">주역 공부</a>
+            <a href="#library" class="iching-dark hover:bg-stone-800 text-white px-4 py-2 rounded-lg text-sm font-bold transition">64괘 모두보기</a>
+        </div>
+    </nav>
+
+    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="serif text-4xl md:text-6xl font-bold mb-6 leading-tight text-stone-800 italic">
+            변화의 마디를 읽고<br>나의 길을 결정하다
+        </h1>
+        <p class="text-stone-500 mb-10 text-lg font-light leading-relaxed">
+            주역은 단순한 점술이 아닙니다. 우주의 변화 원리를 통해<br>삶의 지혜를 얻고 스스로의 길을 밝히는 성찰의 도구입니다.
+        </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-24">
+        <section id="daily-wisdom" class="py-16 text-center bg-white rounded-3xl shadow-lg border border-amber-200">
+            <h2 class="serif text-3xl font-bold mb-4 text-stone-800">오늘의 지혜</h2>
+            <p class="text-stone-500 mb-10">마음을 가다듬고 버튼을 눌러 오늘의 괘를 확인하세요.</p>
+            <button id="today-btn" class="bg-amber-600 hover:bg-amber-700 text-white px-10 py-4 rounded-full text-lg font-bold transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">오늘의 괘 뽑기</button>
+            <div id="today-result" class="mt-12 max-w-2xl mx-auto hidden"></div>
+        </section>
+
+        <!-- AdSense Section -->
+        <section class="py-12">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2599900779484800"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+
+        <section id="library">
+            <div class="text-center mb-16">
+                <h2 class="serif text-4xl font-bold mb-4 italic text-stone-800">주역 64괘 라이브러리</h2>
+                <p class="text-stone-500 font-light">각 괘의 상징과 의미를 탐구해보세요.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4" id="hexagram-grid"></div>
+        </section>
+    </main>
+
+    <div id="modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden z-[100] flex items-center justify-center p-4"></div>
+
+    <footer class="iching-dark py-16 px-8 text-center mt-24">
+        <div class="max-w-4xl mx-auto">
+            <p class="serif text-2xl mb-6 italic">"성인(成人)은 점을 치지 않는다. <br class="md:hidden">다만 변화의 때를 알아 스스로를 닦을 뿐이다."</p>
+            <p class="text-stone-500 text-xs tracking-widest leading-loose font-light italic">
+                본 내용은 도올 김용옥 선생의 『주역강해』를 바탕으로 제작되었으며, 교육적 목적으로 재구성되었습니다.<br>
+                © 2024 I-Ching Wisdom. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>
